@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/4543014a8d.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="container" class="container">
+      <header>
+        <h1>devfinder</h1>
+        <div class="toggle">
+          <p>DARK</p>
+          <div class="toggleIcon" style="align-self: baseline">
+            <button id="btn"></button>
+          </div>
+        </div>
+      </header>
+      <main>
+        <section class="inputSection">
+          <div class="inputIcon">
+            <div class="lupa"></div>
+            <input
+            id="username"
+            type="text"
+            placeholder="Search GitHub username…"
+            />
+          </div>
+          <div class="searchDiv">
+            <div id="errorDiv"></div>
+            <button id="btn2" onclick="getInfo()">Search</button>
+          </div>
+        </section>
+        <section class="contentSection" id="contentSection">
+          <div class="image" id="imagee"></div>
+          <div class="nameSection">
+            <div class="nameSectionName">
+              <h1 id="user">Name</h1>
+              <p id="login">login</p>
+            </div>
+            <div class="nameSectionDate">
+              <p id="dateCreated">date yy/mm/dd</p>
+            </div>
+          </div>
+          <div class="mainStats">
+            <p id="bio">
+              bio
+            </p>
+            <div class="stats">
+              <div class="statRepos stat">
+                <p>Repos</p>
+                <h1 id="reposNumber">x</h1>
+              </div>
+              <div class="statFollowers stat">
+                <p>Followers</p>
+                <h1 id="followersNumber">y</h1>
+              </div>
+              <div class="statFollowing stat">
+                <p>Following</p>
+                <h1 id="followingNumber">z</h1>
+              </div>
+            </div>
+            <div class="socials">
+              <div class="socialsInner">
+                <div class="item">
+                  <i class="fa-solid fa-location-dot"></i>
+                  <p id="loc">location</p>
+                </div>
+                <div class="item">
+                  <i class="fa-solid fa-link"></i>
+                  <p id="blog">blog</p>
+                </div>
+              </div>
+              <div class="socialsInner">
+                <div class="item">
+                  <i class="fa-brands fa-twitter"></i>
+                  <p id="twitter">twitter</p>
+                </div>
+                <div class="item">
+                  <i class="fa-solid fa-building"></i>
+                  <p id="company">company</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
